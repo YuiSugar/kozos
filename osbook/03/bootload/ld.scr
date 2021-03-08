@@ -30,6 +30,7 @@ SECTIONS
 		*(.strings)
 		*(.rodata)
 		*(.rodata.*)
+		. = ALIGN(4);
 		_erodata = . ;
 	} > rom
 
